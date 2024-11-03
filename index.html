@@ -1,197 +1,265 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="style.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/js/all.min.js"
-        integrity="sha512-8pHNiqTlsrRjVD4A/3va++W1sMbUHwWxxRPWNyVlql3T+Hgfd81Qc6FC5WMXDC+tSauxxzp1tgiAvSKFu1qIlA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/js/all.min.js"
+      integrity="sha512-8pHNiqTlsrRjVD4A/3va++W1sMbUHwWxxRPWNyVlql3T+Hgfd81Qc6FC5WMXDC+tSauxxzp1tgiAvSKFu1qIlA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <title>Allu Arjun Portfolio</title>
-</head>
+  </head>
 
-<body>
+  <body class="dark-mode">
     <div id="header">
-            <div class="container">
-            <nav>
-                <a class="mainText" id="logo"><span>A</span>llu Arjun.</a>
-                <ul id="sidemenu">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <i class="fa-solid menucross fa-xmark" onclick="closemenu()"></i>
-                </ul>
-                <i class="fa-solid  menucross fa-bars" onclick="openmenu()"></i>
-                
-            </nav>
-            
-            <div class="header-text">
-                <p class="webdev">Web Developer</p>
-                <h1 class="mainText" >Hi, This is <span>Allu Arjun</span> <br> From India.</h1>
-            </div>
+      <div class="container">
+        <nav>
+          <a class="mainText" id="logo"><span>A</span>llu Arjun.</a>
+          <ul id="sidemenu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid menucross fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <button id="mode-toggle">Change Mode</button>
+          <i class="fa-solid menucross fa-bars" onclick="openmenu()"></i>
+        </nav>
+
+        <div class="header-text">
+          <p class="webdev">Web Developer</p>
+          <h1 class="mainText">
+            Hi, This is <span>Allu Arjun</span> <br />
+            From India.
+          </h1>
         </div>
+      </div>
     </div>
 
     <!-- About -->
     <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="about-col-1">
-                    <img src="https://www.siasat.com/wp-content/uploads/2024/04/allu-arjun-net-worth.jpg" style="width: 319px; height: 574px;" alt="">
-                </div>
-                <div class="about-col-2">
-                    <h1 class="sub-title">About Me</h1>
-                    <p class="sub-title-text">Hi, I'm Allu Arjun belongs to KanyaKumari , TamilNadu India. I'm a web
-                        developer and currently I'm persuing BCA(Bachelor's in Computer Application) from University of
-                        Lucknow.I have completed my intermediate and high school from Azamgarh.You can know more about
-                        me to download my resume. <a href="images/ankush_resu.pdf" download
-                            class="btn btn2">Download CV</a></p>
-                    <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                        <p class="tab-links" onclick="opentab('education')">Education</p>
-                    </div>
-                    <div class="tab-contents active-tab" id="skills">
-                        <ul>
-                            <li><span>Programming</span><br>• C • C++ •Java • SQL • JavaScript</li>
-                            <li><span>Framework & Library</span><br>• React JS • Bootstrap</li>
-                            <li><span>Familiar</span><br>• DBMS • DSA
-                                • OS • OOPS • Github • Window • Linux</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="experience">
-                        <ul>
-                            <li><span>Web developement(2022)</span><br>Udemy Certificate</li>
-                            <li><span>2018-2019</span><br>Diploma In Computer Application</li>
-                            <li><span>2021-2022</span><br>Internship at Corizo</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="education">
-                        <ul>
-                            <li><span>2022</span><br>Full Stack Web Developement Training at Corizo company.</li>
-                            <li><span>2020</span><br>Intermediate With 82%</li>
-                            <li><span>Currently</span><br>Bachelors In Computer Application(2020-2023)</li>
-                        </ul>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img
+              src="https://www.siasat.com/wp-content/uploads/2024/04/allu-arjun-net-worth.jpg"
+              style="width: 319px; height: 90vh"
+              alt=""
+            />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p class="sub-title-text">
+              Hi, I'm Allu Arjun belongs to KanyaKumari , TamilNadu India. I'm a
+              web developer and currently I'm persuing BCA(Bachelor's in
+              Computer Application) from University of Lucknow.I have completed
+              my intermediate and high school from Azamgarh.You can know more
+              about me to download my resume.
+              <a href="images/ankush_resu.pdf" download class="btn btn2" style="display: block;"
+                >Download CV</a
+              >
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
             </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Programming</span><br />• C • C++ •Java • SQL •
+                  JavaScript
+                </li>
+                <li>
+                  <span>Framework & Library</span><br />• React JS • Bootstrap
+                </li>
+                <li>
+                  <span>Familiar</span><br />• DBMS • DSA • OS • OOPS • Github •
+                  Window • Linux
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>Web developement(2022)</span><br />Udemy Certificate
+                </li>
+                <li>
+                  <span>2018-2019</span><br />Diploma In Computer Application
+                </li>
+                <li><span>2021-2022</span><br />Internship at Corizo</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2022</span><br />Full Stack Web Developement Training at
+                  Corizo company.
+                </li>
+                <li><span>2020</span><br />Intermediate With 82%</li>
+                <li>
+                  <span>Currently</span><br />Bachelors In Computer
+                  Application(2020-2023)
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
 
     <!-- Services -->
 
     <div id="services">
-        <div class="container">
-            <h1 class="sub-title">My Services</h1>
-            <div class="services-list">
-                <div>
-                    <i class="fa-solid fa-code services-icons"></i>
-                    <h2>Web Design</h2>
-                    <p>I'm a web developer and I can build a static website and now I'm working on full stack webdevelopement and react-js framework.</p>
-                    <a href="#">learn more</a>
-                </div>
-                <div>
-                    <i class="fa-solid fa-crop services-icons"></i>
-                    <h2>Mathematics</h2>
-                    <p>I'm also good at Mathematics and I taught board level maths about 6 months. I have a Mathematics teacher.</p>
-                    <a href="#">learn more</a>
-                </div>
-                <div>
-                    <i class="fa-brands fa-app-store services-icons"></i>
-                    <h2>Good At Discuss new technologies</h2>
-                    <p>You can discuss with me about new technologies like Metaverse, Artificial Intelligent/Machine Learning, Blockchain etc.</p>
-                    <a href="#">learn more</a>
-                </div>
-            </div>
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code services-icons"></i>
+            <h2>Web Design</h2>
+            <p>
+              I'm a web developer and I can build a static website and now I'm
+              working on full stack webdevelopement and react-js framework.
+            </p>
+            <a href="#">learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-crop services-icons"></i>
+            <h2>Mathematics</h2>
+            <p>
+              I'm also good at Mathematics and I taught board level maths about
+              6 months. I have a Mathematics teacher.
+            </p>
+            <a href="#">learn more</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-app-store services-icons"></i>
+            <h2>Good At Discuss new technologies</h2>
+            <p>
+              You can discuss with me about new technologies like Metaverse,
+              Artificial Intelligent/Machine Learning, Blockchain etc.
+            </p>
+            <a href="#">learn more</a>
+          </div>
         </div>
+      </div>
     </div>
     <!-- Portfolio -->
 
     <div id="portfolio">
-        <div class="container">
-            <h1 class="sub-title">My Work</h1>
-            <div class="work-list">
-                <div class="work">
-                    <img src="images/work-1.png" alt="" srcset="">
-                    <div class="layer">
-                        <h3>Online shopping Website </h3>
-                        <p>In this website you can purchase products like clothes and you can pay using ATM card. </p>
-                        <a href="https://github.com/ankush270/BloodLink-"><i
-                                class="fa-solid fa-up-right-from-square"></i> </a>
-
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="images/work-2.png">
-                    <div class="layer">
-                        <h3>The TODO List Website </h3>
-                        <p>In this website you can add you dail work and after completing those work you can remove it
-                            easily. </p>
-                        <a href="https://boiling-depths-28056.herokuapp.com/"><i
-                                class="fa-solid fa-up-right-from-square"></i> </a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="images/work-3.png" alt="" srcset="">
-                    <div class="layer">
-                        <h3>The Food Website</h3>
-                        <p>In this Project I created a static website of Food store where you can see type of foods as
-                            you see in restaurants.</p>
-                        <a href="https://github.com/ankush270/BloodLink-"><i
-                                class="fa-solid fa-up-right-from-square"></i> </a>
-
-                    </div>
-                </div>
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/work-1.png" alt="" srcset="" />
+            <div class="layer">
+              <h3>Online shopping Website</h3>
+              <p>
+                In this website you can purchase products like clothes and you
+                can pay using ATM card.
+              </p>
+              <a href="https://github.com/ankush270/BloodLink-"
+                ><i class="fa-solid fa-up-right-from-square"></i>
+              </a>
             </div>
-            <a href="#" class="btn">See More</a>
+          </div>
+          <div class="work">
+            <img src="images/work-2.png" />
+            <div class="layer">
+              <h3>The TODO List Website</h3>
+              <p>
+                In this website you can add you dail work and after completing
+                those work you can remove it easily.
+              </p>
+              <a href="https://boiling-depths-28056.herokuapp.com/"
+                ><i class="fa-solid fa-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-3.png" alt="" srcset="" />
+            <div class="layer">
+              <h3 style="padding-top: 3vh">The Food Website</h3>
+              <p>
+                In this Project I created a static website of Food store where
+                you can see type of foods as you see in restaurants.
+              </p>
+              <a href="https://github.com/ankush270/BloodLink-"
+                ><i class="fa-solid fa-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
         </div>
+        <a href="#" class="btn">See More</a>
+      </div>
     </div>
 
     <!-- contact -->
 
     <div id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="contact-left">
-                    <h1 class="sub-title">Contact Me</h1>
-                    <p> <i class="fa-solid fa-paper-plane"></i> we@nitk.edu.in</p>
-                    <p> <i class="fa-solid fa-square-phone"></i> +91 9870761262</p>
-                    <div class="social-icons">
-                        <a target="_blank" href="https://www.facebook.com"><i
-                                class="fa-brands fa-facebook"></i></a>
-                        <a target="_blank" href="https://www.instagram.com"><i
-                                class="fa-brands fa-instagram"></i></a>
-                        <a target="_blank" href="https://twitter.com"><i
-                                class="fa-brands fa-twitter"></i></a>
-                        <a target="_blank" href="https://www.linkedin.com/in/ankushkumar7"><i
-                                class="fa-brands fa-linkedin"></i></a>
-                        <a target="_blank" href="https://github.com/ankush270"><i
-                                class="fa-brands fa-github"></i></a>
-
-                    </div>
-                    <a href="images/ankush_resu.pdf" download class="btn btn2">Download CV</a>
-                </div>
-                <div class="contact-right">
-                    <form name="submit-to-google-sheet" action="">
-                        <input type="text" name="Name" placeholder="Your name" required>
-                        <input type="email" name="Email" placeholder="Your email" required>
-                        <textarea name="Message" id="" rows="6" placeholder="Your Message "></textarea>
-                        <button type="submit" class="btn btn2">Submit</button>
-                    </form>
-                    <span id="msg"></span>
-                </div>
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-paper-plane"></i> we@nitk.edu.in</p>
+            <p><i class="fa-solid fa-square-phone"></i> +91 9870761262</p>
+            <div class="social-icons">
+              <a target="_blank" href=""
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a target="_blank" href=""
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a target="_blank" href=""
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+              <a target="_blank" href=""
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a target="_blank" href=""><i class="fa-brands fa-github"></i></a>
             </div>
+            <a href="images/ankush_resu.pdf" download class="btn btn2"
+              >Download CV</a
+            >
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet" action="">
+              <input type="text" name="Name" placeholder="Your name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your email"
+                required
+              />
+              <textarea
+                name="Message"
+                id=""
+                rows="6"
+                placeholder="Your Message "
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
         </div>
-        <div class="copyright">
-            <p>Copyright &#169; Allu Arjun. Made with <i class="fa-solid fa-heart heart"></i> by Allu Arjun</p>
-        </div>
+      </div>
+      <div class="copyright">
+        <p>
+          Copyright &#169; Allu Arjun. Made with
+          <i class="fa-solid fa-heart heart"></i> by Allu Arjun
+        </p>
+      </div>
     </div>
-</body>
-<script src="main.js"></script>
-
+  </body>
+  <script src="main.js"></script>
 </html>
